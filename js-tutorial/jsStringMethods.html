@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    //string metotlar string değerler üzerine yapışık metotlarım.
+
+    var name = "Çağatay";
+
+    //Çağatay ismini ÇAĞATAY şeklinde göster
+    console.log('UPPER CASE: ', name.toUpperCase());
+
+    //Çağatay ismini çağatay şeklinde (yani tamamen küçük harf olacak şekilde göster)
+    console.log('LOWER CASE', name.toLowerCase());
+
+
+    //nane değişkeninin uzunluğunu bana ver
+    console.log('Length: ', name.length);
+
+
+    //Slice metodu belirlediğimiz indexten gideceği index e kadar olan parçayı bana verir!
+    //2. indexten başlar 4.index e kadar olan parçayı aır
+    var result = name.slice(2,4);
+    console.log('SLICE: ', result);
+
+    var result2 = name.replace("ğ","x");
+    console.log('REPLACE', result2);
+
+
+    var phoneNumber = "+905437331470"
+    
+    //Yukarıdaki numaradan +90 kısmını çıkar. 5437331470
+    var phoneResult = phoneNumber.slice(3);
+    console.log('phoneResult', phoneResult);
+
+
+    var phoneResult2 = phoneNumber.replace("+90","");
+    console.log('phoneResult2', phoneResult2);
+
+    var surname = "Yıldız";
+
+    var fullName = name.concat(" ", surname);
+    console.log('FULL NAME', fullName);
+
+
+    console.log('TRIM', name.trim());
+
+
+    //Index i 3 olan harfi ekrana yazdır
+    console.log('Index-3 ', name[3]);
+
+</script>
+</html>
